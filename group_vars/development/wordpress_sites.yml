@@ -17,3 +17,15 @@ wordpress_sites:
       provider: self-signed
     cache:
       enabled: false
+  gilisepotepa.si:
+    site_hosts:
+      - canonical: gilisepotepa.dev
+    local_path: ../gili # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: admin@gili.dev
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
